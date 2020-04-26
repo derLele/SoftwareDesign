@@ -1,0 +1,95 @@
+body {
+    background-image: url("dangerzone.png");
+    background-repeat: no-repeat;
+  }
+
+.container_blue{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.container_red{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 20%;
+}
+
+.fairy_blue {
+    background-image: url("fairy_blue.png");
+    width: 100px;
+    height:100px;
+    position:fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    animation: xAxis_blue 2.5s infinite cubic-bezier(0.02, 0.01, 0.21, 1);  
+    }
+
+.fairy_blue::after {
+    background-image: url("fairy_blue.png");
+    width: 100px;
+    height:100px;
+    position:fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        
+    animation: yAxis_blue 2.5s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64);  
+    }
+    
+.fairy_red {
+    background-image: url("fairy_red.png");
+    width: 100px;
+    height:100px;
+    position:fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        
+    animation: yAxis_red 3.5s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
+    animation-delay: 1s;  
+    }
+    
+.fairy_red::after {
+    background-image: url("fairy_red.png");
+    width: 100px;
+    height:100px;
+    position:fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+            
+    animation: xAxis_red 3.5s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64);
+    animation-delay: 1s;  
+    }  
+
+@keyframes xAxis_blue {
+    50% {
+        animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+        transform: translate(300px,150px);
+        }
+      }
+
+@keyframes yAxis_blue {
+    50% {
+          animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+          transform: translate(300px,150px);
+        }
+    }
+
+@keyframes xAxis_red {
+    50% {
+        animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+        transform: translate(350px,50px);
+        }
+    }
+    
+@keyframes yAxis_red {
+    50% {
+        animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+              transform: translate(350px,-100px);
+        }
+    }
+
