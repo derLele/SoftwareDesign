@@ -1,3 +1,4 @@
+// maximal 2 Ebenen einrücken!!11!
 namespace UML{
     let sentence : string = prompt("Satz hier hin. LOS!");
 
@@ -7,7 +8,7 @@ namespace UML{
     function reverseWords(input : string){
         let sentence : string = input;
         let returnSentence : string = "";
-        let i : number = 0;
+        let i : number = 0; //diggi was isn i bitte hier?
         let splitSentence :string[] = sentence.split(" "); //splitSentence muss vom Typ array sein
 
         while(i < splitSentence.length){ //Zeichendreher, muss < sein
@@ -22,7 +23,7 @@ namespace UML{
     function reverseSentence(input : string){
         let sentence : string = input;
         let returnSentence : string = "";
-        let i : number = 1;
+        let i : number = 1; //noch ein i? also jetzt bin ich verwirrt Kappa
 
         while(i <= sentence.length){ //muss heißen <=, sonst Abrruch eine Stelle zu früh
             returnSentence += sentence.charAt(sentence.length-i);
@@ -32,3 +33,4 @@ namespace UML{
         return reverseWords(returnSentence) + "\n" + returnSentence;
     }
 }
+//24 Zeilen Code. Das sind vier zu viel Lisa. Bims enttäuscht.
